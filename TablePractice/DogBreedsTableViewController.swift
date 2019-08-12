@@ -8,24 +8,50 @@
 
 import UIKit
 
+struct Dogs {
+    var id: Int
+    var title: String
+    var text: String
+    var image: String
+}
+
 class DogBreedsTableViewController: UITableViewController {
+    var allDogBreeds = [
+        
+        Dogs(id: 1,
+             title: "Doberman",
+            text: "Doberman have brown and black fur.",
+            image: "Doberman Dog"),
+        
+        Dogs(id:2,
+             title:"Golden Retriever",
+            text:"They can hold an egg in their mouth without breaking it.",
+            image:"Golden Retriever with egg."),
+        
+        Dogs(id:3,
+            title:"Husky",
+            text:"Husky are good in the snow.",
+            image:"Husky in snow.")
+             
+]
+    
     
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return allDogBreeds.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
         
-        cell.textLabel?.text = "Section\(indexPath.section)Row\(indexPath.row)"
+        cell.textLabel?.text = allDogBreeds[indexPath.row].title
 
         return cell
     }
