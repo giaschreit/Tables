@@ -21,17 +21,17 @@ class DogBreedsTableViewController: UITableViewController {
         Dogs(id: 1,
              title: "Doberman",
             text: "Doberman have brown and black fur.",
-            image: "Doberman Dog"),
+            image: "doberman"),
         
         Dogs(id:2,
              title:"Golden Retriever",
             text:"They can hold an egg in their mouth without breaking it.",
-            image:"Golden Retriever with egg."),
+            image:"golden egg"),
         
         Dogs(id:3,
             title:"Husky",
             text:"Husky are good in the snow.",
-            image:"Husky in snow.")
+            image:"husky")
              
 ]
     
@@ -52,6 +52,8 @@ class DogBreedsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
         
         cell.textLabel?.text = allDogBreeds[indexPath.row].title
+        cell.detailTextLabel?.text = allDogBreeds[indexPath.row].text
+        cell.imageView?.image = UIImage(named:allDogBreeds[indexPath.row].image)
 
         return cell
     }
