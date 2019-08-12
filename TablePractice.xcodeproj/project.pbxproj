@@ -13,6 +13,7 @@
 		B16386F02301EAC0006B0FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16386EE2301EAC0006B0FCD /* LaunchScreen.storyboard */; };
 		B16386FB2301EAC0006B0FCD /* TablePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16386FA2301EAC0006B0FCD /* TablePracticeTests.swift */; };
 		B16387062301EAC0006B0FCD /* TablePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16387052301EAC0006B0FCD /* TablePracticeUITests.swift */; };
+		B16387162301F1FD006B0FCD /* DogBreedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16387152301F1FD006B0FCD /* DogBreedsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B16387012301EAC0006B0FCD /* TablePracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TablePracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16387052301EAC0006B0FCD /* TablePracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablePracticeUITests.swift; sourceTree = "<group>"; };
 		B16387072301EAC0006B0FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16387152301F1FD006B0FCD /* DogBreedsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B16386EC2301EAC0006B0FCD /* Assets.xcassets */,
 				B16386EE2301EAC0006B0FCD /* LaunchScreen.storyboard */,
 				B16386F12301EAC0006B0FCD /* Info.plist */,
+				B16387152301F1FD006B0FCD /* DogBreedsTableViewController.swift */,
 			);
 			path = TablePractice;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16386E62301EABD006B0FCD /* AppDelegate.swift in Sources */,
+				B16387162301F1FD006B0FCD /* DogBreedsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
